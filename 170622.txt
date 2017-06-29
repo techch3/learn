@@ -1,0 +1,17 @@
+Today I am learning how to install and remove programs.
+
+There are 4 commands. 2 for redhat are rpm and yum. 2 for debian are dpkg and apt-get.
+
+1 rpm vs dpkg
+	install:rpm -i *.rpm dpkg -i *.deb
+	inquiry:rpm -qa      dpkg -l
+	remove :rpm -e sfnam dpkg -r or -P
+2 yum vs apt-get
+	install:yum install sfnam apt-get install sfnam
+	inquiry:* list
+	remove : * remove
+	updat  : yum update sfnam apt-update sfnm
+
+3 inquery installed sfnm
+ rpm -qa | grep sfnam
+
