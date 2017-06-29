@@ -1,0 +1,9 @@
+Today I am learning how to use GIT to tracert documents changes.
+
+1) git init  #to set a repo for git.
+2) git add file.txt #to add a file.txt in repo
+3) git commit "comments" #to make comments and save file.txt
+4) git stat # to check the file stat
+5) git diff # to check the file difference
+6) git log/reflog # to check the commit ID
+7) git reset --head^  ^ or ^^ or ~100

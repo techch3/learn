@@ -1,0 +1,11 @@
+Today I am keep learning Linux.
+
+I learned how to manage the disk with du and df.
+fdisk
+mkfs
+fdck
+mount
+umount
+whoami
+whatis
+ 

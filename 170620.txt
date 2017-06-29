@@ -1,0 +1,15 @@
+Today I am very glad to learn something of linux.
+So I want to write it down by VIM command.
+
+I would like to list down what I learned today,Here is the list:
+1) mkdir
+2) cd ..
+3) cat
+4) mv
+5) vim
+6) passwd
+7) ls -l
+8) uname
+9) sudo -i
+10) chmod
+11) cp 

@@ -1,0 +1,8 @@
+Today I learned something about shell.
+
+All the shell document will be start with"#! /bin/bash"
+
+变量可以直接赋值如 val 使用时在前面增加$
+截取左边的字符用 #，右边的用% *代表所有
+
+数学计算用expr 计算式和数字之间必须用空格隔开 所有公式用``隔开，非单引号。如dig=`expr 6 * 12`
