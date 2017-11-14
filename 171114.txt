@@ -1,0 +1,4 @@
+How To update files to github.
+1) git add <filename>
+2) git commit -m "<comments>"
+3) git push ORIGIN MASTER
