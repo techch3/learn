@@ -1,6 +1,8 @@
+/* Used for my work in Nissan/
+to test how print the DFAC competitor information*/
 #include <stdio.h>
 #include <string.h>
-struct Ct /* sturucture of competitor.*/
+struct Ct /* sturucture of competitor. */
 {char brand[10];
 int rs;
 float ms;
