@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+struct Ct /* sturucture of competitor.*/
+{char brand[10];
+int rs;
+float ms;
+int mo,pn;
+int spo,spp;
+};
+int main()
+{ struct Ct JAC;
+strcpy(JAC.brand,"JAC");
+printf("Competitor Brand is %4s\n",JAC.brand);
+JAC.rs=800;
+printf("JAC retail sales is %4d\n",JAC.rs);
+JAC.ms=8.16;
+printf("JAC market share is %f\n",JAC.ms);
+JAC.mo=20;
+printf("JAC mian outlets is %4d\n",JAC.mo);
+JAC.pn=4;
+printf("JAC partner number is %4d\n",JAC.pn);
+JAC.spo=(JAC.rs/JAC.mo);
+printf("JAC SPO is %4d\n",JAC.spo);
+JAC.spp=(JAC.rs/JAC.pn);
+printf("JAC SPP is %4d\n",JAC.spp);
+return 0;
+}
+
