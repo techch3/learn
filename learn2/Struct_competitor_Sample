@@ -10,19 +10,18 @@ int spo,spp;
 int main()
 { struct Ct JAC;
 strcpy(JAC.brand,"JAC");
-printf("Competitor Brand is %4s\n",JAC.brand);
+printf("Competitor Brand is: %6s\n",JAC.brand);
 JAC.rs=800;
-printf("JAC retail sales is %4d\n",JAC.rs);
-JAC.ms=8.16;
-printf("JAC market share is %f\n",JAC.ms);
+printf("JAC retail sales is: %6d\n",JAC.rs);
+JAC.ms=0.086;
+printf("JAC market share is:    %2.2f%%\n",JAC.ms*100);
 JAC.mo=20;
-printf("JAC mian outlets is %4d\n",JAC.mo);
+printf("JAC mian outlets is: %5d\n",JAC.mo);
 JAC.pn=4;
-printf("JAC partner number is %4d\n",JAC.pn);
+printf("JAC partner number is: %2d\n",JAC.pn);
 JAC.spo=(JAC.rs/JAC.mo);
-printf("JAC SPO is %4d\n",JAC.spo);
+printf("JAC SPO is: %14d\n",JAC.spo);
 JAC.spp=(JAC.rs/JAC.pn);
-printf("JAC SPP is %4d\n",JAC.spp);
+printf("JAC SPP is: %15d\n",JAC.spp);
 return 0;
 }
-
