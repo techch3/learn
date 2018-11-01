@@ -1,0 +1,22 @@
+/****1、增加记录*****/  
+void Insert()  
+{  
+    while(num)  
+    {
+        printf("请输入学号:");  
+        scanf("%s",&students[num].ID);  
+        getchar();  
+        printf("请输入产品名称:");  
+        scanf("%s",&p[num].Name);  
+        getchar(); 
+        printf("请输入CAS:");  
+        scanf("%s",&p[num].CAS);  
+        getchar(); 
+         num++;
+         printf("是否继续?(Y/N)，继续请按任意键，否则输入N:"); 
+        if (getchar()=='N')  
+        {  
+            break;
+        }  
+     }  
+}     
