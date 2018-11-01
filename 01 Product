@@ -10,3 +10,36 @@ struct Product
 /*定义产品数量*/  
 struct Product P[1000];  
 int num=0;  
+/*通过学号返回数组下标*/   
+int Student_SearchByIndex(char id[])  
+{
+    int i;  
+    for (i=0;i<num;i++)  
+    {
+        if (strcmp(students[i].ID,id)==0)  
+        {
+            return i;  
+        }  
+    }  
+    return -1;   
+}
+ /*通过CAS返回数组下标*/
+int Product_SearchByCAS(char CAS[])  
+{
+    int i;  
+    for (i=0;i<num;i++)  
+    { 
+        if (strcmp(p[i].CAS,CAS)==0)
+        { 
+            return i;
+        }  
+    }  
+    return -1;  
+}  
+ /*显示单条产品记录*/  
+void p_DisplaySingle(int index)   
+{
+    printf("%10s%10s%8s\n","编号","产品名称","CAS");  
+    printf("-------------------------------------------------------------\n");  
+    printf("%10s%10s%8.2f\n",p[index].ID,p[index].Name,p[index].CAS);  
+}  
