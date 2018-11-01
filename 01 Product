@@ -1,0 +1,12 @@
+/*定义产品结构体*/  
+struct Product
+{
+     char ID[10];       //编号
+     char Name[20];     //产品名称
+     char CAS[20];      //CAS
+     char Attr[100];   //产品属性
+};
+
+/*定义产品数量*/  
+struct Product P[1000];  
+int num=0;  
