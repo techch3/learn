@@ -1,0 +1,10 @@
+今天学习了如何设置FTP服务器，（在debian下）。
+1）apt install vsftpd ftp.
+2)  vim /etc/vsftpd.conf  修改配置信息。
+
+增加用户和密码
+1）useradd XXX
+2）passwd XXX ***
+
+查看用户  /etc/users
+查看密码  cat /etc/passwd
