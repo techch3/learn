@@ -8,3 +8,44 @@
 
 查看用户  /etc/users
 查看密码  cat /etc/passwd
+
+*****************************************************************************
+C:\Users\user>ftp 35.220.209.190                                                        *
+Connected to 35.220.209.190.                                                              *
+220 Welcome to blah ch3's FTP service.                                               *
+200 Always in UTF8 mode.                                                                   *
+User (35.220.209.190:(none)): ch3fly                                                      *
+331 Please specify the password.                                                          *
+Password:                                                                                             *
+230 Login successful.                                                                             *
+ftp> ls -l                                                                                               *
+500 Illegal PORT command.                                                                  *
+425 Use PORT or PASV first.                                                                  *
+ftp> quit                                                                                               *
+*******************************************************************************
+关shadowsocks，无效，排除。
+换路由器，无效，排除路由器故障；
+关长宽，换手机热点，问题解决。太无厘头了。从这个意义上来讲，
+不要省钱用差的宽带，浪费的时间不值得。
+*******************************************************************************
+FTP服务，主要在设定vsftpd.conf 文件， 位于/etc/vsftpd.conf.
+启用匿名登陆，anonymous,无密码位置在/
+启用本地账户，如ch3fly，需要增设密码 passwd ch3fly *** 位于/home/ch3fly
+*********************************************************************************
+
+C:\Users\user>ftp 35.220.209.190
+Connected to 35.220.209.190.
+220 Welcome to blah ch3's FTP service.
+200 Always in UTF8 mode.
+User (35.220.209.190:(none)): ch3fly
+331 Please specify the password.
+Password:
+230 Login successful.
+ftp> ls -l
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    4 1000     1001         4096 Dec 13 10:35 tem
+226 Directory send OK.
+ftp: 64 bytes received in 0.01Seconds 12.80Kbytes/sec.
+ftp> cd tem
+250 Directory successfully changed.
